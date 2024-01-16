@@ -17,6 +17,9 @@ export default function MainNavigation(props: MainNavigationProps) {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              // inline styes w tym przypadku też przyjmują funkcję, która przyjmuje obiekt z informacją czy dany link jest aktywny czy nie
+              // style={({isActive}) => ({ color: isActive ? "red" : "blue" })}
+
               // prop end zapewnia, że link nie będzie aktywny, jeśli aktywują się jego dzieci (dalszy ciąg ścieżki)
               // czyli jeśli aktywny będzie link /products/1 to link /products nie będzie aktywny
               // dzięki temu nie będziemy mieli dwóch aktywnych linków na raz
