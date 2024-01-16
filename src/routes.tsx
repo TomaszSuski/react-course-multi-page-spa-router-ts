@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
       // they are added direct;ly after domain name
       // absolute paths start with slash
       // they are added after domain name and before relative paths
-      { path: "/", element: <Home /> },
+      { index: true, element: <Home /> },
       { path: "/products", element: <Products /> },
       { path: "products/:productId", element: <ProductDetailsPage /> },
     ],
